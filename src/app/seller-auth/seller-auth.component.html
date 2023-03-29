@@ -1,0 +1,82 @@
+<div *ngIf="!showlogin" class="container">        
+  <!-- showlogin==false  -->
+    
+    <div class="row mt-4">
+<div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h2 class="text-center mt-4 pt-4 ">SIGN-UP FORM</h2>
+            <form #sellersignup="ngForm" (ngSubmit)="signup(sellersignup.value)">
+                <div class="mb-3">
+                    <label for="exampleInputname1"class="form-label"> Name </label>
+                    <input type="text"
+                    name="name"
+                     class="form-control"
+                      id="exampleInputname1"
+                      ngModel>
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" 
+                  name="email"
+                  class="form-control"
+                   id="exampleInputEmail1"
+                   ngModel>
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"> Password</label>
+                  <input type="password"
+                   name="password"
+                    class="form-control"
+                     id="exampleInputPassword1"
+                     ngModel>
+                </div>
+                
+                
+                <button type="submit" class="btn btn-danger">SIGN -UP</button>
+              </form>
+              <div>
+                <a (click)="openlogin()">Already have an account? click for login</a>
+              </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+<div *ngIf="showlogin"  class="container">
+    
+  <div class="row mt-4">
+<div class="col-md-3"></div>
+      <div class="col-md-6">
+        <h2 class="text-center mt-4 pt-4 ">LOGIN FORM</h2>
+          <form #sellerlogin="ngForm" (ngSubmit)="login(sellerlogin.value)">
+              
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" 
+                name="email"
+                class="form-control"
+                 id="exampleInputEmail1"
+                 ngModel>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"> Password</label>
+                <input type="password"
+                 name="password"
+                  class="form-control"
+                   id="exampleInputPassword1"
+                   ngModel>
+                   <p style="color: red; font-weight: 600;">{{autherror}}</p>
+              </div>
+              
+              
+              <button type="submit" class="btn btn-primary">LOGIN</button>
+            </form>
+            <div>
+              <a (click)="opensignup()">Already have an account? click for sign</a>
+            </div>
+      </div>
+      <div class="col-md-3"></div>
+  </div>
+</div>

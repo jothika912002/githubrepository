@@ -1,0 +1,52 @@
+{
+  "seller": [
+    {
+      "name": "gayathri",
+      "email": "gayu@gmail.com",
+      "password": "gayathri",
+      "id": 15
+    },
+    {
+      "name": "fathima",
+      "email": "fathima@gmail.com",
+      "password": "fathima",
+      "id": 16
+    },
+    {
+      "name": "devikad",
+      "email": "devika@gmail.com",
+      "password": "devika",
+      "id": 17
+    },
+    {
+      "name": "devikad",
+      "email": "devika@gmail.com",
+      "password": "devika",
+      "id": 18
+    },
+    {
+      "name": "devikad",
+      "email": "devika@gmail.com",
+      "password": "devika",
+      "id": 19
+    },
+    {
+      "name": "devikad",
+      "email": "devika@gmail.com",
+      "password": "devika",
+      "id": 20
+    },
+    {
+      "name": "devikad",
+      "email": "devika@gmail.com",
+      "password": "devika",
+      "id": 21
+    },
+    {
+      "name": "devikad",
+      "email": "devika@gmail.com",
+      "password": "devika",
+      "id": 22
+    }
+  ]
+}
